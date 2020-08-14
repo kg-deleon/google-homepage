@@ -12,8 +12,11 @@
           background-color: white;
         }
         
-        li {
+        .lefttext {
           float: left;
+        }
+        .righttext {
+          float: right;
         }
         
         li a {
@@ -30,14 +33,75 @@
         </style>
 </head>
 <body>
+  <style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button-search{
+
+    display:inline-block;
+}
+.button-lucky{
+   
+    display:inline-block;
+    }
+
+    #container{
+    text-align: center;
+}
+  </style>
+  <div>
     <ul>
-        <li><a class="active" href="#about">About</a></li>
-        <li><a href="#store">Store</a></li>
-        <li><a href="#gmail">Gmail</a></li>
-        <li><a href="#images">Images</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>    
+        <li><a class="lefttext" href="#about">About</a></li>
+        <li><a class="lefttext" href="#store">Store</a></li>
+        <li><a class="righttext" href="#signin">Sign In</a></li>
+        <li><a class="righttext" href="#images">Images</a></li>
+        <li><a class="righttext" href="#gmail">Gmail</a></li>
+        
+        
+      </ul> </div>
+      <div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="center"> 
+        <br>
+        <form>
+          <input type="text" id="fname" name="fname" class="center">
+        </form> 
+        <br>
+        <div id="container">
+        <button class="btn-search " >Google Search</button>
+        <button class="btn-lucky " >I'm Feeling Lucky</button>
+        </div>
+      </div>   
 </body>
+<footer>
+  <style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:grey;
+      color: white;
+      text-align: left;
+    }
+    
+    </style>
+    
+    <div class="footer">
+      <ul>
+        <li><a class="lefttext" href="#about">About</a></li>
+        <li><a class="lefttext" href="#advertising">Advertising</a></li>
+        <li><a class="lefttext" href="#business">Business</a></li>
+        <li><a class="lefttext" href="#howsearchworks">How Search Works</a></li>
+        <li><a class="righttext" href="#settings">Settings</a></li>
+        <li><a class="righttext" href="#terms">Terms</a></li>
+        <li><a class="righttext" href="#privacy">Privacy</a></li>
+      </ul>
+    </div> 
+</footer> 
 </html>
 
 
